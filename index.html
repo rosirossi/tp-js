@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Proyecto Final</title>
+</head>
+<body>
+    <h1>Formulario de turnos</h1>
+    <div id="formularioTurnos">
+        <div class="form">
+            <form id="formulario">
+                <ul class="lista">
+                    <li>
+                        <label for="nombreCompleto">Nombre completo</label>
+                        <input id="nombreCompleto" name="nombreCompleto" type="text" placeholder="Nombre completo" required>
+                    </li>
+                    <li>
+                        <label for="telefono">Teléfono</label>
+                        <input id="telefono" name="telefono" type="tel" placeholder="Teléfono" required>
+                    </li>
+                    <li>
+                        <label for="vehiculo">Vehículo</label>
+                        <input id="vehiculo" name="vehiculo" type="text" placeholder="Vehículo" required>
+                    </li>
+                    <li>
+                        <label for="servicio">Tipo de servicio</label>
+                        <input id="servicio" name="servicio" type="text" placeholder="Tipo de servicio" required>
+                    </li>
+                    <li>
+                        <label for="turno">Turno</label>
+                        <input id="turno" name="turno" type="date" required>
+                    </li>
+                    <li>
+                        <label for="mensaje">Mensaje adicional:</label>
+                        <textarea id="mensaje" placeholder="Mensaje adicional"></textarea>
+                    </li>
+                    <li>
+                        <button id="reservar" type="submit">Reservar turno</button>
+                    </li>
+                </ul>
+            </form>
+            <div id="eventosContenedor"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
